@@ -1,0 +1,884 @@
+:root{
+    --grey-color:#707070;
+    --whitegrey-color:#e4e4e4;
+    --lightgrey-color:#ababab;
+    --red-color:#fe0101;
+}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+body{overflow-x:hidden;}
+#bar{
+    background-color: #000;
+    height: 180px;
+}
+.hide,
+main,
+.swiper-container{
+    overflow: hidden;
+}
+.headerContainer,
+.rankingContainer,
+.lookContainer,
+.footer-container{
+    width: 1240px;
+    margin: 0 auto;
+}
+.headerContainer,
+.swiper-container,
+.rankingContainer,
+.rankinglists,
+.explain,
+.lookexplain,
+.center,
+.footer-container{
+    position: relative;
+}
+.serch-basket,
+.headerbottom nav ul,
+.rankingcommend,
+.lookcommend,
+.bottom,
+.footertop ul,
+.footerbottom-top{
+    display: flex;
+}
+.headerContainer{
+    padding-top: 60px;
+}
+.headertop{
+    margin-bottom: 70px;
+}
+.headerLogo img,
+.headerbottom nav ul,
+.box .num,
+.bottom-name,
+.bottom-subname{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.hide{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+}
+.serch-basket{
+    justify-content: space-between;
+    position: absolute;
+    top: 45px;
+    right:0;
+}
+.basket{
+    margin-left: 30px;
+}
+.headerbottom nav ul li:not(:last-child){
+    padding-right: 200px;
+}
+.headerbottom nav ul li a{
+    font-size: 24px;
+    color: #fff;
+}
+.swiper-container{
+    height: 800px;
+}
+.swiper-wrapper{
+    width: 500vw;
+    height: 800px;
+}
+.slide{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    float: left;
+}
+.slide1{
+    background: url("image/event1.jpg") no-repeat center/cover;
+}
+.slide2{
+    background: url("image/event2.jpg") no-repeat center/cover;
+}
+.slide3{
+    background: url("image/event3.jpg") no-repeat center/cover;
+}
+.slide4{
+    background: url("image/event4.jpg") no-repeat center/cover;
+}
+.slide5{
+    background: url("image/event5.jpg") no-repeat center/cover;
+}
+.swiper-container img{
+    width: 50px;
+    height: 100px;
+}
+.next{
+    position: absolute;
+    top: 340px;
+    right: 50px;
+}
+.prev{
+    position: absolute;
+    top: 340px;
+    left: 50px;
+}
+.rankingContainer h2,
+.lookContainer h2{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+.rankingContainer h2{
+    padding: 80px 0;
+}
+.rankingcommend,
+.lookcommend{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.rankinglists{
+    margin-bottom: 60px;
+}
+.rankingimg a img{
+    width: 280px;
+    height: 280px;
+    border-radius: 30px;
+}
+.box{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    color: #fff;  
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box .num{
+    top: 40%;
+}
+.box .line{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+.explain{
+    text-align: center;
+}
+.explain .name{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.explain .subname{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.saleprice{
+    font-size: 17px;
+    color:var(--lightgrey-color);
+}
+.price{
+    font-size: 20px;
+    margin: 5px 0 7px 0;
+}
+.count{
+    color: var(--red-color);
+    font-size: 15px; 
+    position: absolute;
+    right: 105px;
+}
+.count img{
+    position: absolute;
+    right: 55px;
+}
+.button{
+    padding-bottom: 50px;
+}
+.button-animation{
+    background-color:var(--whitegrey-color);
+    border-radius: 6px;
+    color:var(--grey-color);
+    padding: 10px; 
+    font-size: 15px;
+    transition-duration: 0.7s;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.button-animation:hover{
+    background-color: #000;
+    color: #fff;
+    box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
+}
+.lookbook{
+    background-color: var(--whitegrey-color);
+}
+.lookContainer h2{
+    padding: 45px 0;
+}
+.looklists{
+    margin-bottom: 35px;
+}
+.lookcommend .looklists .img{
+    width: 400px;
+    height: 535px;
+    display: inline-block;
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+.lookcommend .looklists:nth-of-type(1) .img{
+    background: url("image/look1.jpg") no-repeat center/cover; 
+}
+.lookcommend .looklists:nth-of-type(1) .img:hover{
+    background: url("image/look1-1.jpg") no-repeat center/cover;
+}
+.lookcommend .looklists:nth-of-type(2) .img{
+    background: url("image/look2.jpg") no-repeat center/cover; 
+}
+.lookcommend .looklists:nth-of-type(2) .img:hover{
+    background: url("image/look2-1.jpg") no-repeat center/cover;
+}
+.lookcommend .looklists:nth-of-type(3) .img{
+    background: url("image/look3.jpg") no-repeat center/cover; 
+}
+.lookcommend .looklists:nth-of-type(3) .img:hover{
+    background: url("image/look3-1.jpg") no-repeat center/cover;
+}
+.lookcommend .looklists:nth-of-type(4) .img{
+    background: url("image/look4.jpg") no-repeat center/cover; 
+}
+.lookcommend .looklists:nth-of-type(4) .img:hover{
+    background: url("image/look4-1.jpg") no-repeat center/cover;
+}
+.lookcommend .looklists:nth-of-type(5) .img{
+    background: url("image/look5.jpg") no-repeat center/cover; 
+}
+.lookcommend .looklists:nth-of-type(5) .img:hover{
+    background: url("image/look5-1.jpg") no-repeat center/cover;
+}
+.lookcommend .looklists:nth-of-type(6) .img{
+    background: url("image/look6.jpg") no-repeat center/cover; 
+}
+.lookcommend .looklists:nth-of-type(6) .img:hover{
+    background: url("image/look6-1.jpg") no-repeat center/cover;
+}
+.lookname{
+    font-size: 23px;
+    margin-top: 15px;
+}
+.looksubname{
+    font-size: 16px;
+    margin-top: 5px;
+    color:var(--grey-color);
+}
+.date{
+    font-size: 17px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    color:var(--grey-color);
+}
+.lookbook-more-button{
+    background-color: #fff;
+    color: var(--grey-color);
+}
+.bottom{
+    height: 700px;
+}
+.center{
+    opacity: 1;
+    background-color: #000;
+    width: 100%;
+}
+.center:hover img{
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+.bottom .center a img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.bottom-name{
+    font-size: 44px;
+    color: #fff;
+    top: 40%;
+}
+.bottom-subname{
+    font-size: 28px;
+    color: #fff;
+    top: 50%;
+}
+footer{
+    background-color: #000;
+    height: 622px;
+}
+.footer-container{
+    padding: 100px 0;
+    color:var(--lightgrey-color);
+}
+.footertop-top{
+    padding-bottom: 100px;
+}
+.footertop-top h1{
+    position:absolute ;
+    left: 118px;
+    top: 120px;
+}
+.sns-icon{
+    position: absolute;
+    right: 0;
+}
+.sns-icon a:not(:last-of-type){
+    margin-right: 20px;
+}
+.sns-icon a img{
+    width: 35px;
+    height: 35px;
+}
+.footertop{
+    margin-bottom: 60px;
+}
+.footertop p{
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+}
+.footertop ul{
+    margin-top: 45px;
+}
+.footertop ul li{
+    margin-right:25px ;
+}
+.footertop ul li a{
+    color: var(--lightgrey-color);
+    font-size: 20px;
+}
+.footertop ul li:nth-of-type(3) a{
+    color: #fff;
+    font-weight: 600;
+}
+.footerbottom{
+    font-size: 18px;
+    border-top:1px solid var(--lightgrey-color);
+}
+.footerbottom-top{
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.footerbottom-top li:first-child{
+    margin-right: 35px;
+}
+.footerbottom-bottom{
+    padding-bottom: 50px;
+}
+.copyright-text{
+    font-size: 16px;
+}
+
+@media screen and (min-width:950px) and (max-width:1200px){
+    .headerContainer{
+        width: 100%;
+        padding-top: 65px;
+    }
+    .headertop{
+        margin-bottom: 65px;
+    }
+    .serch-basket{
+        right:20px;
+        top: 50px;
+    }
+    .headerbottom nav ul li:not(:last-child){
+        padding-right: 150px;
+    }
+    .swiper-container,
+    .swiper-wrapper{
+        height: 500px;
+    }
+    .next{
+        top: 200px;
+        right: 50px;
+    }
+    .prev{
+        top: 200px;
+        left: 50px;
+    }
+    .next a img,
+    .prev a img{
+        width: 40px;
+        height: 80px;
+    }
+    .rankingContainer{
+        width: 100%;
+    }
+    .rankingContainer h2,
+    .lookContainer h2{
+        font-size: 40px;
+        padding: 55px 0;
+    }
+    .rankingcommend,
+    .lookContainer,
+    .lookcommend{
+        width: 950px;
+    }
+    .rankinglists{
+        margin-bottom: 40px;
+    }
+    .rankingimg a img{
+        width: 220px;
+        height: 220px;
+    }
+    .box{
+        width: 35px;
+        height: 35px;
+    }
+    .box .num{
+        font-size: 11px;
+    }
+    .box .line{
+        top: 35%;
+        left: 40%;
+    }
+    .explain .name{
+        font-size: 23px;
+        margin: 15px;
+    }
+    .explain .subname{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .price{
+        font-size: 17px;
+    }
+    .count{
+        right: 80px;
+    }
+    .button-animation{
+        margin-top:40px;
+    }
+    .saleprice,
+    .looksubname,
+    .footertop p,
+    .footertop ul li a{
+        font-size: 14px;
+    }
+    .count,
+    .footerbottom,
+    .date,
+    .copyright-text{
+        font-size: 12px;
+    }
+    .count img{
+        width: 15px;
+        right: 45px;
+    }
+    .lookContainer{
+        width: 100%;
+    }
+    .looklists{
+        margin-bottom: 20px;
+    }
+    .lookcommend .looklists .img{
+        width: 301px;
+        height: 404px;
+    }
+    .lookname{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .date{
+        top: 28px;
+    }
+    .bottom,
+    .bottom .center a img,
+    footer{
+        height: 450px;
+    }
+    .bottom-name{
+        font-size: 34px;
+    }
+    .bottom-subname{
+        font-size: 23px;
+    }
+    .footer-container{
+        padding: 60px 0;
+        width: 950px;
+    }
+    .footertop-top{
+        padding-bottom:80px;
+    }
+    .footertop-top h1{
+        left: 115px;
+        top: 80px;
+    }
+    .sns-icon a img{
+        width: 30px;
+        height: 30px;
+    }
+    .footertop{
+        margin-bottom: 40px;
+    }
+    .footertop ul{
+        margin-top: 30px;
+    }
+    .footerbottom-top{
+        margin-top: 30px;
+        padding-bottom: 15px;
+    }
+    .footerbottom-bottom{
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:949px){
+    #bar{
+        height: 120px;
+    }
+    .headerContainer{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .headertop{
+        margin-bottom: 45px;
+    }
+    .headerLogo img{
+        width: 130px;
+    }
+    .serch-basket{
+        top: 35px;
+        right:40px;
+    }
+    .serch-basket li a img{
+        width: 18px;
+    }
+    .basket{
+        margin-left: 15px;
+    }
+    .headerbottom nav ul li:not(:last-child){
+        padding-right: 75px;
+    }
+    .headerbottom nav ul li a{
+        font-size: 18px;
+    }
+    .swiper-container,
+    .swiper-wrapper{
+        height: 350px;
+    }
+    .next{
+        top: 150px;
+        right: 20px;
+    }
+    .prev{
+        top: 150px;
+        left: 20px;
+    }
+    .next a img,
+    .prev a img
+    {
+        width: 20px;
+        height: 40px;
+    }
+    .rankingContainer{
+        width: 100%;
+    }
+    .rankingContainer h2,
+    .lookContainer h2{
+        font-size: 40px;
+        padding: 35px 0;
+    }
+    .rankingcommend,
+    .lookcommend{
+        justify-content: space-evenly;
+    }
+    .rankinglists{
+        margin-bottom: 45px;
+    }
+    .rankingimg a img{
+        width: 250px;
+        height: 250px;
+    }
+    .box{
+        width: 40px;
+        height: 40px;
+    }
+    .box .num{
+        font-size: 11px;
+    }
+    .box .line{
+        top: 35%;
+        left: 40%;
+    }
+    .explain .name{
+        font-size: 23px;
+        margin: 15px 0;
+    }
+    .explain .subname{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .saleprice{
+        font-size: 14px;
+    }
+    .price{
+        font-size: 17px;
+    }
+    .count{
+        right: 95px;
+    }
+    .count,
+    .bottom-subname,
+    .footertop p,
+    .footertop ul li a{
+        font-size: 12px;
+    }
+    .count img{
+        width: 15px;
+        right: 45px;
+    }
+    .button-animation{
+        margin-top: 30px;
+    }
+    .lookbook-more-button{
+        margin-top: 50px;
+    }
+    .lookContainer{
+        width: 100%;
+    }
+    .looklists{
+        margin-bottom: 20px;
+    }
+    .lookcommend .looklists .img{
+        width: 315px;
+        height: 420px;
+    }
+    .lookname{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .looksubname{
+        font-size: 14px;
+    }
+    .date{
+        font-size: 13px;
+        top: 28px;
+    }
+    .bottom,
+    .bottom .center a img{
+        height: 350px;
+    }
+    .bottom-name{
+        font-size: 17px;
+    }
+    footer{
+        height: 330px;
+    }
+    .footer-container{
+        width: 750px;
+        padding: 40px 0;
+    }
+    .footertop-top{
+        padding-bottom:60px;
+    }
+    .footertop-top h1{
+        left:65px;
+        top: 52px;
+    }
+    .sns-icon a img{
+        width: 25px;
+        height: 25px;
+    }
+    .footertop{
+        margin-bottom: 30px;
+    }
+    .footertop ul{
+        margin-top: 30px;
+    }
+    .footerbottom,
+    .copyright-text{
+        font-size: 10px;
+    }
+    .footerbottom-top{
+        margin-top: 25px;
+        padding-bottom: 10px;
+    }
+    .footerbottom-bottom{
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width:767px){
+    #bar{
+        height: 120px;
+    }
+    .headerContainer{
+        width: 100%;
+        padding-top: 45px;
+    }
+    .headertop{
+        margin-bottom: 40px;
+    }
+    .headerLogo img{
+        width: 130px;
+    }
+    .serch-basket{
+        top: 35px;
+        right:40px;
+    }
+    .serch-basket li a img{
+        width: 18px;
+    }
+    .basket{
+        margin-left: 15px;
+    }
+    .headerbottom nav ul li:not(:last-child){
+        padding-right: 55px;
+    }
+    .headerbottom nav ul li a{
+        font-size: 15px;
+    }
+    .swiper-container,
+    .swiper-wrapper{
+        height: 350px;
+    }
+    .next{
+        top: 150px;
+        right: 20px;
+    }
+    .prev{
+        top: 150px;
+        left: 20px;
+    }
+    .next a img,
+    .prev a img
+    {
+        width: 20px;
+        height: 40px;
+    }
+    .rankingContainer{
+        width: 100%;
+    }
+    .rankingContainer h2,
+    .lookContainer h2{
+        font-size: 30px;
+        padding: 30px 0;
+    }
+    .rankingcommend,
+    .lookcommend{
+        justify-content: space-evenly;
+    }
+    .rankingimg a img{
+        width: 180px;
+        height: 180px;
+    }
+    .box{
+        width: 35px;
+        height: 35px;
+    }
+    .box .num{
+        font-size: 11px;
+    }
+    .box .line{
+        top: 35%;
+        left: 40%;
+    }
+    .explain .name{
+        font-size: 18px;
+        margin: 10px;
+    }
+    .explain .subname{
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+    .saleprice,
+    .price{
+        font-size: 15px;
+    }
+    .count img{
+        right: 45px;
+        bottom: -3px;
+        width: 20px;
+    }
+    .count{
+        font-size: 12px;
+        right: 60px;
+    }
+    .bottom-subname,
+    .footertop p,
+    .footertop ul li a{
+        font-size: 10px;
+    }
+    .button-animation{
+        margin-top: 30px;
+    }
+    .lookbook-more-button{
+        margin-top: 50px;
+    }
+    .lookContainer{
+        width: 100%;
+    }
+    .looklists{
+        margin-bottom: 15px;
+    }
+    .lookcommend .looklists .img{
+        width: 180px;
+        height: 280px;
+    }
+    .lookname{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .looksubname{
+        font-size: 10px;
+    }
+    .date{
+        font-size: 8px;
+        top: 25px;
+    }
+    .bottom,
+    .bottom .center a img{
+        height: 220px;
+    }
+    .bottom-name{
+        font-size: 17px;
+    }
+    footer{
+        height: 320px;
+    }
+    .footer-container{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .footertop-top{
+        padding-bottom:45px;
+    }
+    .footertop-top h1{
+        left:65px;
+        top: 45px;
+    }
+    .sns-icon a img{
+        width: 25px;
+        height: 25px;
+    }
+    .footertop{
+        margin-bottom: 20px;
+    }
+    .footertop ul{
+        margin-top: 40px;
+    }
+    .footertop ul li{
+        margin-right: 18px;
+    }
+    .footerbottom,
+    .copyright-text{
+        font-size: 10px;
+    }
+    .footerbottom-top{
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+    .footerbottom-bottom{
+        padding-bottom: 25px;
+    }
+}
